@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Green Eventwaala - Young sustainable event management startup. 1 event completed, many more in motion. Eco-friendly corporate and family events.">
+    <meta name="description" content="Green Eventwaala - Sustainable event management startup. 1 event completed, multiple projects in motion. Eco-friendly corporate and family events with measurable impact.">
     <meta property="og:title" content="Green Eventwaala - Sustainable Events Start Here">
-    <meta property="og:description" content="Building India's greenest event management company, one celebration at a time. 1 event completed, 4 projects in motion.">
+    <meta property="og:description" content="Building India's greenest event management company, one celebration at a time.">
     <meta property="og:type" content="website">
     <title>Green Eventwaala - Sustainable Events Start Here</title>
+    
+    <!-- v3: FIXED CSS PATH - was styles-v2.css, now styles.css -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -25,11 +33,12 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- v3: Enhanced Loading Screen with 2s timeout -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
             <div class="loader-logo">Green Eventwaala</div>
             <div class="loader-spinner"></div>
+            <p class="loader-text">Loading sustainable experiences...</p>
         </div>
     </div>
 
@@ -54,7 +63,7 @@
                             </button>
                         </li>
                     </ul>
-                    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -65,7 +74,7 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section - v3: Enhanced gradient and parallax -->
         <section class="hero" id="hero">
             <div class="hero-video-wrapper">
                 <video class="hero-video" autoplay muted loop playsinline id="heroVideo">
@@ -76,6 +85,7 @@
                     <span class="control-icon unmuted">🔊</span>
                 </button>
             </div>
+            <!-- v3: New high-contrast gradient overlay -->
             <div class="hero-overlay"></div>
             <div class="hero-content container">
                 <div class="hero-badge">New Beginnings</div>
@@ -97,7 +107,7 @@
             </div>
         </section>
 
-        <!-- Journey Section (NEW in v2) -->
+        <!-- Journey Section -->
         <section class="journey-section section" id="journey" data-scroll-section>
             <div class="container">
                 <div class="section-intro-block">
@@ -116,9 +126,9 @@
                         <h3>Major Event Delivered</h3>
                         <p class="journey-client">CrestCorp Annual General Meeting</p>
                         <ul class="journey-stats">
-                            <li><strong>400</strong> Attendees</li>
-                            <li><strong>95%</strong> Waste Diverted</li>
-                            <li><strong>100%</strong> Recycled</li>
+                            <li><strong>400</strong><span>Attendees</span></li>
+                            <li><strong>95%</strong><span>Waste Diverted</span></li>
+                            <li><strong>100%</strong><span>Recycled</span></li>
                         </ul>
                         <p class="journey-desc">
                             Our first major corporate event proved that sustainability 
@@ -183,7 +193,7 @@
             </div>
         </section>
 
-        <!-- Stats Section -->
+        <!-- Stats Section - v3: Enhanced counters -->
         <section class="stats-section section" data-scroll-section>
             <div class="container">
                 <h2 class="section-title reveal">Impact That Matters</h2>
@@ -202,18 +212,18 @@
                     <div class="stat-card reveal" data-delay="200">
                         <div class="stat-number" data-count="95">0</div>
                         <div class="stat-suffix">%</div>
-                        <div class="stat-label">Waste Diverted (First Event)</div>
+                        <div class="stat-label">Waste Diverted</div>
                     </div>
                     <div class="stat-card reveal" data-delay="300">
                         <div class="stat-number" data-count="6">0</div>
                         <div class="stat-suffix">+</div>
-                        <div class="stat-label">Eco-Partner Collaborations</div>
+                        <div class="stat-label">Eco-Partners</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Services Section - v3: Floating icons -->
         <section class="services-section section" data-scroll-section>
             <div class="container">
                 <h2 class="section-title reveal">What We Do</h2>
@@ -265,7 +275,6 @@
                         <div class="trust-badge">Local First</div>
                         <div class="trust-badge">Transparent Pricing</div>
                         <div class="trust-badge">Family-Owned</div>
-                        <!-- Duplicate for seamless loop -->
                         <div class="trust-badge">CrestCorp Partner</div>
                         <div class="trust-badge">Eco-Certified</div>
                         <div class="trust-badge">Zero Waste Committed</div>
@@ -285,9 +294,9 @@
                     <a href="work.html" class="view-all">See Full Details →</a>
                 </div>
                 <div class="work-grid">
-                    <article class="work-card featured reveal" data-delay="0">
+                    <article class="work-card featured reveal">
                         <div class="work-image">
-                            <img src="assets/images/placeholder-work-1.jpg" alt="CrestCorp AGM 2024" loading="lazy">
+                            <img src="assets/images/placeholder-work-1.jpg" alt="CrestCorp AGM 2024 - Sustainable event setup" loading="lazy">
                         </div>
                         <div class="work-content">
                             <div class="work-meta">
@@ -347,7 +356,7 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA Section - v3: Enhanced gradient -->
         <section class="cta-section section" data-scroll-section>
             <div class="container">
                 <div class="cta-content reveal">
@@ -384,10 +393,10 @@
                     <div class="footer-col">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="#">Corporate Events</a></li>
-                            <li><a href="#">Family Events</a></li>
-                            <li><a href="#">Sustainable Sourcing</a></li>
-                            <li><a href="#">Impact Reporting</a></li>
+                            <li><a href="#services">Corporate Events</a></li>
+                            <li><a href="#services">Family Events</a></li>
+                            <li><a href="#services">Sustainable Sourcing</a></li>
+                            <li><a href="#services">Impact Reporting</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -407,7 +416,7 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- v3: Scripts - GSAP + Custom -->
     <script src="vendor/gsap.min.js"></script>
     <script src="vendor/ScrollTrigger.min.js"></script>
     <script src="js/scripts.js"></script>
