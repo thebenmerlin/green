@@ -1,34 +1,51 @@
 [
   {
     "id": 1,
-    "title": "Eco-Driven Annual Meet",
+    "title": "Eco-Driven Annual General Meeting",
     "client": "CrestCorp Limited",
     "year": 2024,
-    "sustainable_solution": "Reused 100% recycled stage decor materials, 95% of event waste composted, carbon offsets purchased.",
-    "summary": "End-to-end sustainable production of an annual general meeting for 400 attendees; reduced plastic use by 98%."
+    "status": "completed",
+    "sustainable_solution": "100% recycled stage decor materials, 95% of event waste composted, carbon offsets purchased.",
+    "summary": "Our first major corporate event—400 attendees, zero-plastic policy, measurable sustainability outcomes.",
+    "attendees": 400,
+    "waste_diverted": 95
   },
   {
     "id": 2,
-    "title": "Plastic-Free Leadership Summit",
+    "title": "Tech Product Launch",
     "client": "MondoTech",
-    "year": 2023,
-    "sustainable_solution": "Zero single-use plastics, partnered with local recyclers for all materials, upcycled event swag.",
-    "summary": "Organized a multi-day conference with fully recyclable collateral and compostable F&B service."  
+    "year": 2026,
+    "status": "in-progress",
+    "sustainable_solution": "Planning phase: Solar-powered venue, digital-first collateral, hybrid streaming to reduce travel emissions.",
+    "summary": "Upcoming product launch for 200 attendees—Q1 2026.",
+    "attendees": 200
   },
   {
     "id": 3,
-    "title": "Solar-Powered Product Launch",
-    "client": "Alpha Renewables",
+    "title": "Sustainable Family Wedding",
+    "client": "Private Client",
     "year": 2025,
-    "sustainable_solution": "100% event energy from on-site solar, sourcing from eco-certified vendors, hybrid/remote stream.",
-    "summary": "Live-streamed, carbon-neutral product launch with recycled display installations and digital-first approach."
+    "status": "in-progress",
+    "sustainable_solution": "Zero-waste catering, locally-sourced flowers, reusable decor, donation program for leftover food.",
+    "summary": "150-guest wedding celebration—December 2025.",
+    "attendees": 150
   },
   {
     "id": 4,
-    "title": "Community CSR Green Drive",
+    "title": "CSR Community Engagement Event",
     "client": "Delta Bank",
-    "year": 2024,
-    "sustainable_solution": "Deployed waste segregation, composting stations; educational sustainability workshops during the event.",
-    "summary": "CSR volunteering campaign with measurable impact—over 3 tons of waste kept out of landfill."
+    "year": 2026,
+    "status": "planning",
+    "sustainable_solution": "Educational workshops, tree-planting activities, waste segregation demos.",
+    "summary": "Community outreach event—planning phase."
+  },
+  {
+    "id": 5,
+    "title": "Corporate Sustainability Retreat",
+    "client": "Alpha Renewables",
+    "year": 2026,
+    "status": "discussion",
+    "sustainable_solution": "Off-grid venue, carbon-neutral transport, local sourcing, impact measurement.",
+    "summary": "Multi-day corporate retreat—under discussion."
   }
 ]
