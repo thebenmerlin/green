@@ -3,392 +3,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Green Eventwaala - Sustainable event management startup. 1 event completed, multiple projects in motion.">
-    <title>Green Eventwaala - Sustainable Events Start Here</title>
+    <meta name="description" content="Green Eventwaala - India's premier sustainable event management company. Eco-friendly corporate and family events with measurable environmental impact.">
+    <meta name="keywords" content="sustainable events, eco-friendly events, corporate events India, green event management, zero waste events">
+    <meta name="author" content="Green Eventwaala">
     
-    <!-- FIXED CSS PATH -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Green Eventwaala - Sustainable Events, Measurable Impact">
+    <meta property="og:description" content="Building India's greenest event management company, one celebration at a time.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Green Eventwaala",
+      "description": "Sustainable event management company",
+      "url": "https://thebenmerlin.github.io/green/",
+      "foundingDate": "2024",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "service": {
+        "@type": "Service",
+        "serviceType": "Eco-Friendly Event Management",
+        "areaServed": "India"
+      }
+    }
+    </script>
+    
+    <title>Green Eventwaala - Sustainable Events Start Here</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 </head>
 <body>
-    <!-- NO LOADING SCREEN - REMOVED ENTIRELY -->
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">🌿</div>
+            <h2>Green Eventwaala</h2>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
 
-    <!-- Header -->
-    <header class="header" id="header">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="header-inner">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">Green Eventwaala</span>
-                </a>
-                <nav class="nav" role="navigation">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link active">Home</a></li>
-                        <li><a href="work.html" class="nav-link">Work</a></li>
-                        <li><a href="creators.html" class="nav-link">Partners</a></li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
-                        <li>
-                            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
-                                <span class="icon-sun">☀️</span>
-                                <span class="icon-moon">🌙</span>
-                            </button>
-                        </li>
-                    </ul>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </nav>
+            <div class="nav-brand">
+                <span class="nav-logo">🌿</span>
+                <span class="nav-title">Green Eventwaala</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#sustainability" class="nav-link">Impact</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-badge">New Beginnings</div>
+            <h1 class="hero-title">Even Small Steps<br>Can Be Sustainable</h1>
+            <p class="hero-subtitle">Building India's greenest event management company,<br>one eco-friendly celebration at a time.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Let's Create Together</a>
+                <a href="#about" class="btn btn-secondary">Our Story</a>
             </div>
         </div>
-    </header>
+        <div class="scroll-indicator">
+            <span>Discover</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-video-wrapper">
-                <video class="hero-video" autoplay muted loop playsinline id="heroVideo">
-                    <source src="assets/hero-placeholder.mp4" type="video/mp4">
-                </video>
-                <button class="video-control" id="videoControl" aria-label="Mute/Unmute video">
-                    <span class="control-icon muted">🔇</span>
-                    <span class="control-icon unmuted">🔊</span>
-                </button>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Journey Has Just Begun</h2>
+                <p class="section-subtitle">We're a young startup with big dreams and sustainable values. Here's where we are today.</p>
             </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content container">
-                <div class="hero-badge">New Beginnings</div>
-                <h1 class="hero-title">
-                    Even Small Steps<br>Can Be Sustainable
-                </h1>
-                <p class="hero-subtitle">
-                    Building India's greenest event management company,<br>
-                    one eco-friendly celebration at a time.
-                </p>
-                <div class="hero-cta-group">
-                    <a href="contact.html" class="btn btn-primary btn-large">Let's Create Together</a>
-                    <a href="#journey" class="btn btn-secondary btn-large">Our Story</a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <span>Discover</span>
-                <div class="scroll-arrow"></div>
-            </div>
-        </section>
-
-        <!-- Journey Section -->
-        <section class="journey-section section" id="journey">
-            <div class="container">
-                <div class="section-intro-block">
-                    <h2 class="section-title">Our Journey Has Just Begun</h2>
-                    <p class="section-intro">
-                        We're a young startup with big dreams and sustainable values. 
-                        Here's where we are today.
-                    </p>
+            
+            <div class="journey-grid">
+                <!-- Completed -->
+                <div class="journey-card completed">
+                    <div class="journey-badge">✓ Completed</div>
+                    <div class="journey-number">01</div>
+                    <h3>Major Event Delivered</h3>
+                    <p class="journey-client">CrestCorp Annual General Meeting</p>
+                    <ul class="journey-stats">
+                        <li><strong>400</strong><span>Attendees</span></li>
+                        <li><strong>95%</strong><span>Waste Diverted</span></li>
+                        <li><strong>100%</strong><span>Recycled</span></li>
+                    </ul>
+                    <p class="journey-desc">Our first major corporate event proved that sustainability and professionalism go hand in hand.</p>
                 </div>
 
-                <div class="journey-grid">
-                    <div class="journey-card completed">
-                        <div class="journey-badge">✓ Completed</div>
-                        <div class="journey-number">01</div>
-                        <h3>Major Event Delivered</h3>
-                        <p class="journey-client">CrestCorp Annual General Meeting</p>
-                        <ul class="journey-stats">
-                            <li><strong>400</strong><span>Attendees</span></li>
-                            <li><strong>95%</strong><span>Waste Diverted</span></li>
-                            <li><strong>100%</strong><span>Recycled</span></li>
-                        </ul>
-                        <p class="journey-desc">
-                            Our first major corporate event proved that sustainability 
-                            and professionalism go hand in hand.
-                        </p>
-                    </div>
-
-                    <div class="journey-card in-progress">
-                        <div class="journey-badge status-orange">⟳ In Progress</div>
-                        <div class="journey-number">04</div>
-                        <h3>Projects In Motion</h3>
-                        <div class="ongoing-list">
-                            <div class="ongoing-item">
-                                <span class="ongoing-icon">🎯</span>
-                                <div>
-                                    <strong>Tech Product Launch</strong>
-                                    <p>200 attendees • Q1 2026</p>
-                                </div>
+                <!-- In Progress -->
+                <div class="journey-card in-progress">
+                    <div class="journey-badge status-orange">⟳ In Progress</div>
+                    <div class="journey-number">04</div>
+                    <h3>Projects In Motion</h3>
+                    <div class="ongoing-list">
+                        <div class="ongoing-item">
+                            <span class="ongoing-icon">🎯</span>
+                            <div>
+                                <strong>Tech Product Launch</strong>
+                                <p>200 attendees • Q1 2026</p>
                             </div>
-                            <div class="ongoing-item">
-                                <span class="ongoing-icon">👥</span>
-                                <div>
-                                    <strong>Family Wedding</strong>
-                                    <p>150 guests • Dec 2025</p>
-                                </div>
+                        </div>
+                        <div class="ongoing-item">
+                            <span class="ongoing-icon">💍</span>
+                            <div>
+                                <strong>Family Wedding</strong>
+                                <p>150 guests • Dec 2025</p>
                             </div>
-                            <div class="ongoing-item">
-                                <span class="ongoing-icon">🌱</span>
-                                <div>
-                                    <strong>CSR Community Event</strong>
-                                    <p>Planning phase</p>
-                                </div>
+                        </div>
+                        <div class="ongoing-item">
+                            <span class="ongoing-icon">🌱</span>
+                            <div>
+                                <strong>CSR Community Event</strong>
+                                <p>Planning phase</p>
                             </div>
-                            <div class="ongoing-item">
-                                <span class="ongoing-icon">🎊</span>
-                                <div>
-                                    <strong>Corporate Retreat</strong>
-                                    <p>Under discussion</p>
-                                </div>
+                        </div>
+                        <div class="ongoing-item">
+                            <span class="ongoing-icon">🎊</span>
+                            <div>
+                                <strong>Corporate Retreat</strong>
+                                <p>Under discussion</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="journey-card vision">
-                        <div class="journey-badge status-blue">→ Vision</div>
-                        <div class="journey-number">∞</div>
-                        <h3>The Road Ahead</h3>
-                        <p class="journey-desc">
-                            We're building partnerships, refining processes, and proving 
-                            that every event—big or small—deserves a sustainable approach.
-                        </p>
-                        <ul class="vision-goals">
-                            <li>10 events by end of 2026</li>
-                            <li>Zero-waste certification</li>
-                            <li>Regional vendor network</li>
-                            <li>Family + Corporate verticals</li>
-                        </ul>
-                    </div>
+                <!-- Vision -->
+                <div class="journey-card vision">
+                    <div class="journey-badge status-blue">→ Vision</div>
+                    <div class="journey-number">∞</div>
+                    <h3>The Road Ahead</h3>
+                    <p class="journey-desc">We're building partnerships, refining processes, and proving that every event deserves a sustainable approach.</p>
+                    <ul class="vision-goals">
+                        <li>10 events by end of 2026</li>
+                        <li>Zero-waste certification</li>
+                        <li>Regional vendor network</li>
+                        <li>Family + Corporate verticals</li>
+                    </ul>
                 </div>
             </div>
-        </section>
 
-        <!-- Stats Section -->
-        <section class="stats-section section">
-            <div class="container">
-                <h2 class="section-title">Impact That Matters</h2>
-                <p class="section-intro">Starting small, measuring everything</p>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="1">0</div>
-                        <div class="stat-suffix">✓</div>
-                        <div class="stat-label">Event Completed</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="4">0</div>
-                        <div class="stat-suffix">+</div>
-                        <div class="stat-label">Projects In Motion</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="95">0</div>
-                        <div class="stat-suffix">%</div>
-                        <div class="stat-label">Waste Diverted</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="6">0</div>
-                        <div class="stat-suffix">+</div>
-                        <div class="stat-label">Eco-Partners</div>
-                    </div>
+            <!-- Mission -->
+            <div class="mission-block">
+                <h3>Our Mission</h3>
+                <p>At Green Eventwaala, exceptional corporate events and environmental responsibility are not mutually exclusive. We revolutionize event management by proving that sustainability enhances creativity, impact, and success.</p>
+                <p>Founded in 2024, we've grown from passionate environmentalists into India's emerging sustainable event management company. Every event is a testament to conscious choices and circular economy principles.</p>
+            </div>
+
+            <!-- Values -->
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h4>Planet First</h4>
+                    <p>Every decision prioritizes environmental impact, from vendor selection to waste management.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h4>Innovation</h4>
+                    <p>Exploring new materials, technologies, and practices to minimize environmental footprint.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h4>Partnership</h4>
+                    <p>Collaborating with eco-certified vendors, artisans, and sustainability experts.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">📊</div>
+                    <h4>Transparency</h4>
+                    <p>Detailed impact reports for every event, measuring carbon footprint and waste diversion.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Services Section -->
-        <section class="services-section section">
-            <div class="container">
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
                 <h2 class="section-title">What We Do</h2>
-                <p class="section-intro">Sustainable solutions for corporate events and family celebrations</p>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon floating">🎯</div>
-                        <h3>Corporate Events</h3>
-                        <p>Conferences, AGMs, product launches, and team retreats—delivered with zero compromise on sustainability.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon floating">💍</div>
-                        <h3>Family Events</h3>
-                        <p>Weddings, anniversaries, and celebrations that honor your values and the planet.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon floating">♻️</div>
-                        <h3>Sustainable Sourcing</h3>
-                        <p>Curated network of eco-certified vendors, recycled materials, and circular-supply partners.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon floating">📊</div>
-                        <h3>Impact Reporting</h3>
-                        <p>Transparent metrics: carbon footprint, waste diverted, materials reused. Every event, measured.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon floating">🌱</div>
-                        <h3>Zero-Waste Planning</h3>
-                        <p>On-site waste segregation, composting, and partnerships with local recyclers.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon floating">⚡</div>
-                        <h3>Renewable Energy</h3>
-                        <p>Solar-powered setups and energy-efficient solutions for all events.</p>
-                    </div>
+                <p class="section-subtitle">Sustainable solutions for corporate events and family celebrations</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Corporate Events</h3>
+                    <p>Conferences, AGMs, product launches, and team retreats—delivered with zero compromise on sustainability.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💍</div>
+                    <h3>Family Events</h3>
+                    <p>Weddings, anniversaries, and celebrations that honor your values and the planet.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">♻️</div>
+                    <h3>Sustainable Sourcing</h3>
+                    <p>Curated network of eco-certified vendors, recycled materials, and circular-supply partners.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Impact Reporting</h3>
+                    <p>Transparent metrics: carbon footprint, waste diverted, materials reused. Every event, measured.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Zero-Waste Planning</h3>
+                    <p>On-site waste segregation, composting, and partnerships with local recyclers.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Renewable Energy</h3>
+                    <p>Solar-powered setups and energy-efficient solutions for all events.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Trust Section -->
-        <section class="trust-section section">
-            <div class="container">
-                <h2 class="section-title">Building Trust, One Event at a Time</h2>
-                <div class="trust-marquee">
-                    <div class="marquee-content">
-                        <div class="trust-badge">CrestCorp Partner</div>
-                        <div class="trust-badge">Eco-Certified</div>
-                        <div class="trust-badge">Zero Waste Committed</div>
-                        <div class="trust-badge">Local First</div>
-                        <div class="trust-badge">Transparent Pricing</div>
-                        <div class="trust-badge">Family-Owned</div>
-                        <div class="trust-badge">CrestCorp Partner</div>
-                        <div class="trust-badge">Eco-Certified</div>
-                        <div class="trust-badge">Zero Waste Committed</div>
-                    </div>
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="section sustainability-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Impact That Matters</h2>
+                <p class="section-subtitle">Starting small, measuring everything</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-suffix">✓</div>
+                    <div class="stat-label">Event Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Projects In Motion</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Waste Diverted</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Eco-Partners</div>
                 </div>
             </div>
-        </section>
 
-        <!-- Work Section -->
-        <section class="work-section section">
-            <div class="container">
-                <div class="section-header">
-                    <div>
-                        <h2 class="section-title">Our First Success</h2>
-                        <p class="section-intro">The event that started it all</p>
-                    </div>
-                    <a href="work.html" class="view-all">See Full Details →</a>
+            <!-- Commitments -->
+            <div class="commitments-grid">
+                <div class="commitment-card">
+                    <div class="commitment-icon">♻️</div>
+                    <h4>Zero Single-Use Plastics</h4>
+                    <p>Eliminated all single-use plastics since 2024, partnering with vendors who share this commitment.</p>
                 </div>
-                <div class="work-grid">
-                    <article class="work-card featured">
-                        <div class="work-image">
-                            <img src="assets/images/placeholder-work-1.jpg" alt="CrestCorp AGM 2024" loading="lazy">
+                <div class="commitment-card">
+                    <div class="commitment-icon">🌱</div>
+                    <h4>95% Waste Diversion</h4>
+                    <p>Through comprehensive segregation, composting, and recycling, we divert 95% of event waste from landfills.</p>
+                </div>
+                <div class="commitment-card">
+                    <div class="commitment-icon">⚡</div>
+                    <h4>Renewable Energy</h4>
+                    <p>Solar and renewable energy sources power our events, significantly reducing carbon emissions.</p>
+                </div>
+                <div class="commitment-card">
+                    <div class="commitment-icon">🔄</div>
+                    <h4>Circular Supply Chain</h4>
+                    <p>Working exclusively with suppliers committed to circular economy principles.</p>
+                </div>
+                <div class="commitment-card">
+                    <div class="commitment-icon">📈</div>
+                    <h4>Carbon Offsetting</h4>
+                    <p>Purchasing verified carbon credits supporting reforestation and renewable energy projects.</p>
+                </div>
+                <div class="commitment-card">
+                    <div class="commitment-icon">🎓</div>
+                    <h4>Education & Advocacy</h4>
+                    <p>Conducting sustainability workshops to elevate industry standards.</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <div class="cert-badge">🌿 Eco-Committed</div>
+                <div class="cert-badge">♻️ Zero Waste Goal</div>
+                <div class="cert-badge">🌍 Carbon Neutral Pathway</div>
+                <div class="cert-badge">✅ Sustainability First</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our First Success</h2>
+                <p class="section-subtitle">The event that started it all</p>
+            </div>
+
+            <div class="work-showcase">
+                <div class="work-card-large">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <span>🎯</span>
+                            <p>Event Photography Placeholder</p>
                         </div>
-                        <div class="work-content">
-                            <div class="work-meta">
-                                <span class="work-client">CrestCorp Limited</span>
-                                <span class="work-year">2024</span>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-meta">
+                            <span class="work-client">CrestCorp Limited</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                        <h3>Eco-Driven Annual General Meeting</h3>
+                        <p class="work-description">Our inaugural event showcased how sustainability elevates corporate gatherings. With 400 attendees, we achieved 95% waste diversion through meticulous planning and eco-certified vendor partnerships.</p>
+                        <div class="work-highlights">
+                            <div class="highlight-item">
+                                <strong>400</strong>
+                                <span>Attendees</span>
                             </div>
-                            <h3 class="work-title">Eco-Driven Annual General Meeting</h3>
-                            <p class="work-description">400 attendees • 100% recycled materials • 95% waste composted</p>
-                            <div class="work-tags">
-                                <span class="work-tag">Our First Event</span>
-                                <span class="work-tag">Corporate</span>
+                            <div class="highlight-item">
+                                <strong>100%</strong>
+                                <span>Recycled Materials</span>
+                            </div>
+                            <div class="highlight-item">
+                                <strong>95%</strong>
+                                <span>Waste Composted</span>
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Zero</strong>
+                                <span>Single-Use Plastics</span>
                             </div>
                         </div>
-                    </article>
+                        <div class="work-tags">
+                            <span class="work-tag">Our First Event</span>
+                            <span class="work-tag">Corporate</span>
+                            <span class="work-tag">400+ Attendees</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Partners Section -->
-        <section class="creators-section section">
-            <div class="container">
-                <h2 class="section-title">Our Eco-Partners</h2>
-                <p class="section-intro">Working with the best in sustainable event solutions</p>
-                <div class="creators-grid">
-                    <div class="creator-card">
-                        <div class="creator-image">
-                            <div class="placeholder-creator">RP</div>
-                        </div>
-                        <h3 class="creator-name">RecyclePro Materials</h3>
-                        <p class="creator-bio">Recycled stage decor and upcycled event materials.</p>
+            <!-- Partners -->
+            <div class="partners-section">
+                <h3>Our Eco-Partners</h3>
+                <p>Working with the best in sustainable event solutions</p>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-avatar">RP</div>
+                        <h4>RecyclePro Materials</h4>
+                        <p>Recycled stage decor specialist</p>
                     </div>
-                    <div class="creator-card">
-                        <div class="creator-image">
-                            <div class="placeholder-creator">ES</div>
-                        </div>
-                        <h3 class="creator-name">EcoStage Designs</h3>
-                        <p class="creator-bio">Sustainable set designers for corporate events.</p>
+                    <div class="partner-card">
+                        <div class="partner-avatar">ES</div>
+                        <h4>EcoStage Designs</h4>
+                        <p>Sustainable set designers</p>
                     </div>
-                    <div class="creator-card">
-                        <div class="creator-image">
-                            <div class="placeholder-creator">GC</div>
-                        </div>
-                        <h3 class="creator-name">GreenCater Services</h3>
-                        <p class="creator-bio">Zero-waste catering with organic ingredients.</p>
+                    <div class="partner-card">
+                        <div class="partner-avatar">GC</div>
+                        <h4>GreenCater Services</h4>
+                        <p>Zero-waste catering</p>
                     </div>
-                    <div class="creator-card">
-                        <div class="creator-image">
-                            <div class="placeholder-creator">CO</div>
-                        </div>
-                        <h3 class="creator-name">Carbon Offset India</h3>
-                        <p class="creator-bio">Verified carbon credits for event neutrality.</p>
+                    <div class="partner-card">
+                        <div class="partner-avatar">CO</div>
+                        <h4>Carbon Offset India</h4>
+                        <p>Verified carbon credits</p>
                     </div>
-                </div>
-                <div class="text-center">
-                    <a href="creators.html" class="btn btn-secondary">Meet All Partners</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Let's Build Something Green Together</h2>
-                    <p class="cta-text">Whether you're planning a corporate event or a family celebration, we'd love to hear from you.</p>
-                    <a href="contact.html" class="btn btn-primary btn-large">Start Your Sustainable Event</a>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build Something Green Together</h2>
+                <p class="section-subtitle">Whether you're planning a corporate event or family celebration, we'd love to hear from you</p>
             </div>
-        </section>
-    </main>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@greeneventwaala.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 12345 67890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Office</strong>
+                            <p>123 Green Avenue<br>Mumbai, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Full Name *">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email Address *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder="Company Name">
+                    </div>
+                    <div class="form-group">
+                        <select id="eventType" name="eventType" required>
+                            <option value="">Event Type *</option>
+                            <option value="conference">Conference</option>
+                            <option value="agm">Annual General Meeting</option>
+                            <option value="product-launch">Product Launch</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate-retreat">Corporate Retreat</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="attendees" name="attendees" placeholder="Expected Attendees">
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your event *"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3 class="footer-logo">Green Eventwaala</h3>
-                    <p class="footer-tagline">Sustainable Events. Authentic Beginnings.</p>
-                    <div class="footer-certifications">
-                        <span class="cert-badge">🌿 Eco-Committed</span>
-                        <span class="cert-badge">♻️ Zero Waste Goal</span>
-                    </div>
+                    <h3>🌿 Green Eventwaala</h3>
+                    <p>Sustainable Events. Authentic Beginnings.</p>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="work.html">Our Work</a></li>
-                            <li><a href="creators.html">Partners</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">Corporate Events</a></li>
-                            <li><a href="#services">Family Events</a></li>
-                            <li><a href="#services">Sustainable Sourcing</a></li>
-                            <li><a href="#services">Impact Reporting</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="mailto:hello@greeneventwaala.com">Email</a></li>
-                        </ul>
-                    </div>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#sustainability">Impact</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Green Eventwaala. All rights reserved.</p>
+                <p>Building India's greenest event management company.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="vendor/gsap.min.js"></script>
-    <script src="vendor/ScrollTrigger.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
 </body>
 </html>
