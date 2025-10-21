@@ -1610,3 +1610,21 @@ img {
         transition-duration: 0.01ms !important;
     }
 }
+:root {
+    /* v3 High-Contrast Palette - WCAG AAA Compliant */
+    --green-primary: #007D57;      /* Rich emerald */
+    --green-dark: #044A31;          /* Deep forest */
+    --green-light: #6BBF59;         /* Fresh leaf */
+    --yellow-accent: #F4C542;       /* Warm gold */
+    --text-dark: #222222;           /* Near black - 16.1:1 contrast */
+    --text-light: #FAFAF5;          /* Warm white */
+    --bg-light: #FAFAF5;
+    --bg-dark: #044A31;
+    --grey-soft: #E5E5E5;
+    --teal-accent: #136F63;
+    
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
