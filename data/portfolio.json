@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Eco-Driven Annual Meet",
+    "client": "CrestCorp Limited",
+    "year": 2024,
+    "sustainable_solution": "Reused 100% recycled stage decor materials, 95% of event waste composted, carbon offsets purchased.",
+    "summary": "End-to-end sustainable production of an annual general meeting for 400 attendees; reduced plastic use by 98%."
+  },
+  {
+    "id": 2,
+    "title": "Plastic-Free Leadership Summit",
+    "client": "MondoTech",
+    "year": 2023,
+    "sustainable_solution": "Zero single-use plastics, partnered with local recyclers for all materials, upcycled event swag.",
+    "summary": "Organized a multi-day conference with fully recyclable collateral and compostable F&B service."  
+  },
+  {
+    "id": 3,
+    "title": "Solar-Powered Product Launch",
+    "client": "Alpha Renewables",
+    "year": 2025,
+    "sustainable_solution": "100% event energy from on-site solar, sourcing from eco-certified vendors, hybrid/remote stream.",
+    "summary": "Live-streamed, carbon-neutral product launch with recycled display installations and digital-first approach."
+  },
+  {
+    "id": 4,
+    "title": "Community CSR Green Drive",
+    "client": "Delta Bank",
+    "year": 2024,
+    "sustainable_solution": "Deployed waste segregation, composting stations; educational sustainability workshops during the event.",
+    "summary": "CSR volunteering campaign with measurable impact—over 3 tons of waste kept out of landfill."
+  }
+]

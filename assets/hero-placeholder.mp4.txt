@@ -1,0 +1,17 @@
+PLACEHOLDER VIDEO
+Replace with actual hero video showing:
+- Corporate events in progress
+- Sustainable practices (recycling, solar power, etc.)
+- Professional event management
+
+Specs:
+- Format: MP4 (H.264)
+- Resolution: 1920x1080 or higher
+- Duration: 15-30 seconds (looping)
+- File size: Under 10MB (compressed)
+- No audio required (video will be muted by default)
+
+Free video sources:
+- Videezy.com (corporate event footage)
+- Pexels.com (sustainability videos)
+- Vecteezy.com (green energy clips)
