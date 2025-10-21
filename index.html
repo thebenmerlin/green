@@ -3,53 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Green Eventwaala - Sustainable event management startup. 1 event completed, multiple projects in motion. Eco-friendly corporate and family events with measurable impact.">
-    <meta property="og:title" content="Green Eventwaala - Sustainable Events Start Here">
-    <meta property="og:description" content="Building India's greenest event management company, one celebration at a time.">
-    <meta property="og:type" content="website">
+    <meta name="description" content="Green Eventwaala - Sustainable event management startup. 1 event completed, multiple projects in motion.">
     <title>Green Eventwaala - Sustainable Events Start Here</title>
     
-    <!-- v3: FIXED CSS PATH - was styles-v2.css, now styles.css -->
+    <!-- FIXED CSS PATH -->
     <link rel="stylesheet" href="css/styles.css">
     
-    <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Green Eventwaala",
-      "description": "Sustainable event management startup",
-      "foundingDate": "2024",
-      "service": {
-        "@type": "Service",
-        "serviceType": "Eco-Friendly Event Management",
-        "areaServed": "India"
-      }
-    }
-    </script>
 </head>
 <body>
-    <!-- v3: Enhanced Loading Screen with 2s timeout -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-content">
-            <div class="loader-logo">Green Eventwaala</div>
-            <div class="loader-spinner"></div>
-            <p class="loader-text">Loading sustainable experiences...</p>
-        </div>
-    </div>
+    <!-- NO LOADING SCREEN - REMOVED ENTIRELY -->
 
-    <!-- Header / Navigation -->
+    <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <div class="header-inner">
                 <a href="index.html" class="logo">
                     <span class="logo-text">Green Eventwaala</span>
                 </a>
-                <nav class="nav" role="navigation" aria-label="Main navigation">
+                <nav class="nav" role="navigation">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link active">Home</a></li>
                         <li><a href="work.html" class="nav-link">Work</a></li>
@@ -63,7 +38,7 @@
                             </button>
                         </li>
                     </ul>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -74,7 +49,7 @@
     </header>
 
     <main>
-        <!-- Hero Section - v3: Enhanced gradient and parallax -->
+        <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="hero-video-wrapper">
                 <video class="hero-video" autoplay muted loop playsinline id="heroVideo">
@@ -85,7 +60,6 @@
                     <span class="control-icon unmuted">🔊</span>
                 </button>
             </div>
-            <!-- v3: New high-contrast gradient overlay -->
             <div class="hero-overlay"></div>
             <div class="hero-content container">
                 <div class="hero-badge">New Beginnings</div>
@@ -108,19 +82,18 @@
         </section>
 
         <!-- Journey Section -->
-        <section class="journey-section section" id="journey" data-scroll-section>
+        <section class="journey-section section" id="journey">
             <div class="container">
                 <div class="section-intro-block">
-                    <h2 class="section-title reveal">Our Journey Has Just Begun</h2>
-                    <p class="section-intro reveal">
+                    <h2 class="section-title">Our Journey Has Just Begun</h2>
+                    <p class="section-intro">
                         We're a young startup with big dreams and sustainable values. 
                         Here's where we are today.
                     </p>
                 </div>
 
                 <div class="journey-grid">
-                    <!-- Completed Event -->
-                    <div class="journey-card completed reveal" data-delay="0">
+                    <div class="journey-card completed">
                         <div class="journey-badge">✓ Completed</div>
                         <div class="journey-number">01</div>
                         <h3>Major Event Delivered</h3>
@@ -136,8 +109,7 @@
                         </p>
                     </div>
 
-                    <!-- In Progress -->
-                    <div class="journey-card in-progress reveal" data-delay="100">
+                    <div class="journey-card in-progress">
                         <div class="journey-badge status-orange">⟳ In Progress</div>
                         <div class="journey-number">04</div>
                         <h3>Projects In Motion</h3>
@@ -173,8 +145,7 @@
                         </div>
                     </div>
 
-                    <!-- Vision -->
-                    <div class="journey-card vision reveal" data-delay="200">
+                    <div class="journey-card vision">
                         <div class="journey-badge status-blue">→ Vision</div>
                         <div class="journey-number">∞</div>
                         <h3>The Road Ahead</h3>
@@ -193,28 +164,28 @@
             </div>
         </section>
 
-        <!-- Stats Section - v3: Enhanced counters -->
-        <section class="stats-section section" data-scroll-section>
+        <!-- Stats Section -->
+        <section class="stats-section section">
             <div class="container">
-                <h2 class="section-title reveal">Impact That Matters</h2>
-                <p class="section-intro reveal">Starting small, measuring everything</p>
+                <h2 class="section-title">Impact That Matters</h2>
+                <p class="section-intro">Starting small, measuring everything</p>
                 <div class="stats-grid">
-                    <div class="stat-card reveal" data-delay="0">
+                    <div class="stat-card">
                         <div class="stat-number" data-count="1">0</div>
                         <div class="stat-suffix">✓</div>
                         <div class="stat-label">Event Completed</div>
                     </div>
-                    <div class="stat-card reveal" data-delay="100">
+                    <div class="stat-card">
                         <div class="stat-number" data-count="4">0</div>
                         <div class="stat-suffix">+</div>
                         <div class="stat-label">Projects In Motion</div>
                     </div>
-                    <div class="stat-card reveal" data-delay="200">
+                    <div class="stat-card">
                         <div class="stat-number" data-count="95">0</div>
                         <div class="stat-suffix">%</div>
                         <div class="stat-label">Waste Diverted</div>
                     </div>
-                    <div class="stat-card reveal" data-delay="300">
+                    <div class="stat-card">
                         <div class="stat-number" data-count="6">0</div>
                         <div class="stat-suffix">+</div>
                         <div class="stat-label">Eco-Partners</div>
@@ -223,38 +194,38 @@
             </div>
         </section>
 
-        <!-- Services Section - v3: Floating icons -->
-        <section class="services-section section" data-scroll-section>
+        <!-- Services Section -->
+        <section class="services-section section">
             <div class="container">
-                <h2 class="section-title reveal">What We Do</h2>
-                <p class="section-intro reveal">Sustainable solutions for corporate events and family celebrations</p>
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-intro">Sustainable solutions for corporate events and family celebrations</p>
                 <div class="services-grid">
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <div class="service-icon floating">🎯</div>
                         <h3>Corporate Events</h3>
                         <p>Conferences, AGMs, product launches, and team retreats—delivered with zero compromise on sustainability.</p>
                     </div>
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <div class="service-icon floating">💍</div>
                         <h3>Family Events</h3>
                         <p>Weddings, anniversaries, and celebrations that honor your values and the planet.</p>
                     </div>
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <div class="service-icon floating">♻️</div>
                         <h3>Sustainable Sourcing</h3>
                         <p>Curated network of eco-certified vendors, recycled materials, and circular-supply partners.</p>
                     </div>
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <div class="service-icon floating">📊</div>
                         <h3>Impact Reporting</h3>
                         <p>Transparent metrics: carbon footprint, waste diverted, materials reused. Every event, measured.</p>
                     </div>
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <div class="service-icon floating">🌱</div>
                         <h3>Zero-Waste Planning</h3>
                         <p>On-site waste segregation, composting, and partnerships with local recyclers.</p>
                     </div>
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <div class="service-icon floating">⚡</div>
                         <h3>Renewable Energy</h3>
                         <p>Solar-powered setups and energy-efficient solutions for all events.</p>
@@ -263,10 +234,10 @@
             </div>
         </section>
 
-        <!-- Trust Indicators -->
-        <section class="trust-section section" data-scroll-section>
+        <!-- Trust Section -->
+        <section class="trust-section section">
             <div class="container">
-                <h2 class="section-title reveal">Building Trust, One Event at a Time</h2>
+                <h2 class="section-title">Building Trust, One Event at a Time</h2>
                 <div class="trust-marquee">
                     <div class="marquee-content">
                         <div class="trust-badge">CrestCorp Partner</div>
@@ -283,20 +254,20 @@
             </div>
         </section>
 
-        <!-- Featured Work -->
-        <section class="work-section section" data-scroll-section>
+        <!-- Work Section -->
+        <section class="work-section section">
             <div class="container">
                 <div class="section-header">
                     <div>
-                        <h2 class="section-title reveal">Our First Success</h2>
-                        <p class="section-intro reveal">The event that started it all</p>
+                        <h2 class="section-title">Our First Success</h2>
+                        <p class="section-intro">The event that started it all</p>
                     </div>
                     <a href="work.html" class="view-all">See Full Details →</a>
                 </div>
                 <div class="work-grid">
-                    <article class="work-card featured reveal">
+                    <article class="work-card featured">
                         <div class="work-image">
-                            <img src="assets/images/placeholder-work-1.jpg" alt="CrestCorp AGM 2024 - Sustainable event setup" loading="lazy">
+                            <img src="assets/images/placeholder-work-1.jpg" alt="CrestCorp AGM 2024" loading="lazy">
                         </div>
                         <div class="work-content">
                             <div class="work-meta">
@@ -304,7 +275,7 @@
                                 <span class="work-year">2024</span>
                             </div>
                             <h3 class="work-title">Eco-Driven Annual General Meeting</h3>
-                            <p class="work-description">400 attendees • 100% recycled stage materials • 95% waste composted • Carbon offsets purchased</p>
+                            <p class="work-description">400 attendees • 100% recycled materials • 95% waste composted</p>
                             <div class="work-tags">
                                 <span class="work-tag">Our First Event</span>
                                 <span class="work-tag">Corporate</span>
@@ -315,34 +286,34 @@
             </div>
         </section>
 
-        <!-- Partners -->
-        <section class="creators-section section" data-scroll-section>
+        <!-- Partners Section -->
+        <section class="creators-section section">
             <div class="container">
-                <h2 class="section-title reveal">Our Eco-Partners</h2>
-                <p class="section-intro reveal">Working with the best in sustainable event solutions</p>
+                <h2 class="section-title">Our Eco-Partners</h2>
+                <p class="section-intro">Working with the best in sustainable event solutions</p>
                 <div class="creators-grid">
-                    <div class="creator-card reveal">
+                    <div class="creator-card">
                         <div class="creator-image">
                             <div class="placeholder-creator">RP</div>
                         </div>
                         <h3 class="creator-name">RecyclePro Materials</h3>
                         <p class="creator-bio">Recycled stage decor and upcycled event materials.</p>
                     </div>
-                    <div class="creator-card reveal">
+                    <div class="creator-card">
                         <div class="creator-image">
                             <div class="placeholder-creator">ES</div>
                         </div>
                         <h3 class="creator-name">EcoStage Designs</h3>
                         <p class="creator-bio">Sustainable set designers for corporate events.</p>
                     </div>
-                    <div class="creator-card reveal">
+                    <div class="creator-card">
                         <div class="creator-image">
                             <div class="placeholder-creator">GC</div>
                         </div>
                         <h3 class="creator-name">GreenCater Services</h3>
                         <p class="creator-bio">Zero-waste catering with organic ingredients.</p>
                     </div>
-                    <div class="creator-card reveal">
+                    <div class="creator-card">
                         <div class="creator-image">
                             <div class="placeholder-creator">CO</div>
                         </div>
@@ -356,10 +327,10 @@
             </div>
         </section>
 
-        <!-- CTA Section - v3: Enhanced gradient -->
-        <section class="cta-section section" data-scroll-section>
+        <!-- CTA Section -->
+        <section class="cta-section section">
             <div class="container">
-                <div class="cta-content reveal">
+                <div class="cta-content">
                     <h2 class="cta-title">Let's Build Something Green Together</h2>
                     <p class="cta-text">Whether you're planning a corporate event or a family celebration, we'd love to hear from you.</p>
                     <a href="contact.html" class="btn btn-primary btn-large">Start Your Sustainable Event</a>
@@ -401,22 +372,21 @@
                     </div>
                     <div class="footer-col">
                         <h4>Connect</h4>
-                        <ul class="social-links">
-                            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-                            <li><a href="#" aria-label="Instagram">Instagram</a></li>
-                            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
                             <li><a href="mailto:hello@greeneventwaala.com">Email</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Green Eventwaala. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Sustainability Commitment</a></p>
+                <p>&copy; 2025 Green Eventwaala. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- v3: Scripts - GSAP + Custom -->
+    <!-- Scripts -->
     <script src="vendor/gsap.min.js"></script>
     <script src="vendor/ScrollTrigger.min.js"></script>
     <script src="js/scripts.js"></script>
