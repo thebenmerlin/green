@@ -510,4 +510,23 @@
         utils
     };
 
-})();
+};
+const pageLoader = {
+    init: function() {
+        const loader = document.getElementById('pageLoader');
+        if (!loader) return;
+        
+        const hideLoader = () => {
+            loader.classList.add('hidden');
+        };
+        
+        // Hide after maximum 2 seconds
+        const timeout = setTimeout(hideLoader, 2000);
+        
+        // Or hide when page fully loads (whichever comes first)
+        window.addEventListener('load', () => {
+            clearTimeout(timeout);
+            setTimeout(hideLoader, 300); // Small delay for smooth transition
+        });
+    }
+};
