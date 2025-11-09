@@ -34,8 +34,8 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-accent">Contact</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>📧 <a href="mailto:info@greeneventwaala.com" className="hover:text-secondary">info@greeneventwaala.com</a></li>
-              <li>📱 <a href="tel:+919876543210" className="hover:text-secondary">+91 9876 543 210</a></li>
+              <li>📧 <a href="mailto:info@greeneventwaala.com" className="hover:text-secondary">mail@greeneventwaala.com</a></li>
+              <li>📱 <a href="tel:+(911234567891)" className="hover:text-secondary">+91 1234 567 890</a></li>
               <li>📍 Mumbai, India</li>
             </ul>
           </div>
