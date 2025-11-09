@@ -6,19 +6,12 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white pt-16 pb-8">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-secondary font-heading mb-2">
-              Green Eventwaala
-            </h3>
-            <p className="text-gray-300 text-sm">
-              Celebrations that don't cost the Earth. Eco-friendly events built with love and responsibility.
-            </p>
+            <h3 className="text-2xl font-bold text-secondary font-heading mb-2">Green Eventwaala</h3>
+            <p className="text-gray-300 text-sm">Celebrations that don't cost the Earth. Eco-friendly events built with love and responsibility.</p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-bold mb-4 text-accent">Quick Links</h4>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -29,7 +22,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="font-bold mb-4 text-accent">Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -40,7 +32,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-bold mb-4 text-accent">Contact</h4>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -51,10 +42,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
         <hr className="border-gray-700 mb-8" />
 
-        {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>&copy; {currentYear} Green Eventwaala. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
