@@ -4,9 +4,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <div className={`md:hidden fixed left-0 right-0 top-20 bg-white shadow-lg transition-all duration-300 ${
-      isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-    }`}>
+    <div className={`md:hidden fixed left-0 right-0 top-20 bg-white shadow-lg transition-all duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
       <div className="p-4 space-y-4">
         <Link href="/" onClick={handleClose} className="block text-dark hover:text-primary font-medium">Home</Link>
         <Link href="/about" onClick={handleClose} className="block text-dark hover:text-primary font-medium">About</Link>

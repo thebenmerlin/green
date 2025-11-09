@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 
 export default function Contact() {
@@ -8,19 +9,21 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-    
+
     try {
-      const response = await fetch('https://formspree.io/f/mrbrzanl', {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-      
+
       if (response.ok) {
         setSubmitStatus('success');
         e.target.reset();
+        setTimeout(() => setSubmitStatus(null), 5000);
       } else {
         setSubmitStatus('error');
       }

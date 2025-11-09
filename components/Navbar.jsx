@@ -32,16 +32,11 @@ export default function Navbar() {
             <Link href="/events" className="text-dark hover:text-primary transition font-medium">Events</Link>
             <Link href="/testimonials" className="text-dark hover:text-primary transition font-medium">Testimonials</Link>
             <Link href="/contact">
-              <button className="px-6 py-2 bg-primary text-white rounded-md font-bold hover:bg-secondary">
-                Contact
-              </button>
+              <button className="px-6 py-2 bg-primary text-white rounded-md font-bold hover:bg-secondary">Contact</button>
             </Link>
           </div>
 
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-dark focus:outline-none"
-          >
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-dark focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'} />
             </svg>

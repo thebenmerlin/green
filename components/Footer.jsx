@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold text-secondary font-heading mb-2">Green Eventwaala</h3>
-            <p className="text-gray-300 text-sm">Celebrations that don't cost the Earth. Eco-friendly events built with love and responsibility.</p>
+            <p className="text-gray-300 text-sm">Celebrations that don't cost the Earth. Eco-friendly events.</p>
           </div>
 
           <div>
@@ -28,7 +28,6 @@ export default function Footer() {
               <li><Link href="/services" className="hover:text-secondary">Eco-Weddings</Link></li>
               <li><Link href="/services" className="hover:text-secondary">Corporate Events</Link></li>
               <li><Link href="/services" className="hover:text-secondary">Eco Décor</Link></li>
-              <li><Link href="/contact" className="hover:text-secondary">Book Consultation</Link></li>
             </ul>
           </div>
 
@@ -46,11 +45,6 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>&copy; {currentYear} Green Eventwaala. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-secondary">Privacy Policy</a>
-            <a href="#" className="hover:text-secondary">Terms of Service</a>
-            <a href="#" className="hover:text-secondary">Follow Us</a>
-          </div>
         </div>
       </div>
     </footer>

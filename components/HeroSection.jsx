@@ -17,9 +17,7 @@ export default function HeroSection() {
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className={`relative z-10 text-center px-4 max-w-4xl transition-all duration-1000 transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}>
+      <div className={`relative z-10 text-center px-4 max-w-4xl transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <h1 className="text-5xl md:text-7xl font-bold font-heading mb-6">
           Celebrations That Don't Cost the Earth
         </h1>
